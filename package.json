@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "0x src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "node performance/benchmark.js",
     "fork": "node src/index.js --FORK",
