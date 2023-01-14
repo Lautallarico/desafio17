@@ -1,0 +1,10 @@
+<div>
+    <h2>RANDOMS</h2>
+    <p>Te pongo el boton al principio porque si no le pusiste el params tenes que scrollear bocha</p>
+    <button onclick="location.href='/api/auth/'">VOLVER AL INICIO</button>
+    <ul>
+        {{#each data}}
+        <li>El numero {{@key}} se repitió {{this}} ves/veces</li>
+        {{/each}}
+    </ul>
+</div>

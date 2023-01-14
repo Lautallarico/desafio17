@@ -1,0 +1,29 @@
+<div class="flex justify-center">
+    <div class="mt-10 w-1/4 bg-gray-800 py-10 px-10 rounded-box">
+        <div class="mb-5 text-black">
+            <h2 class="text-3xl mb-1">SIGN UP / REGISTRARSE</h2>
+        </div>
+        <div class="card text-bg-light mb-3" style="max-width: 30rem; border: 1px">
+            <div class="card-header">Sign in</div>
+            <div class="card-body">
+                <form action="/api/auth/signup" method="post" role="form" autocomplete="off">
+
+                    <input id="name" name="name" placeholder="Ingresa tu nombre" class="input input-bordered w-full"
+                        type="text" style="width: 20rem" required />
+
+                    <input id="lastname" name="lastname" placeholder="Ingresa tu apellido"
+                        class="input input-bordered w-full" style="width: 20rem" type="text" required />
+
+                    <input id="email" name="email" placeholder="Ingresa tu email" class="input input-bordered w-full"
+                        type="email" style="width: 20rem" required />
+
+                    <input id="password" name="password" placeholder="New password" class="input input-bordered w-full"
+                        type="password" style="width: 20rem" required />
+
+                    <input class="btn btn-secondary" type="submit" style="width: 10rem;" value="Sign up" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
