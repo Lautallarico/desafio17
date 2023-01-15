@@ -40,7 +40,7 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs')
 app.set('views', './public/views')
 
-// app.use(express.static('./public'))
+app.use(express.static('./public'))
 
 
 
