@@ -12,7 +12,7 @@ const getSelectedDaos = () => {
         case 'mongo': {
             MongoDBService.init();
             return {
-                ProductDao: new ProductsMongo(),
+                // ProductDao: new ProductsMongo(),
                 CartDao: new CartsMongo(),
                 // MessageDao: new MessagesMongo() **NO CREADO**
                 UserDao: new UsersMongo()
