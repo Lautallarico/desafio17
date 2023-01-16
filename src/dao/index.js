@@ -12,20 +12,20 @@ const getSelectedDaos = () => {
         case 'mongo': {
             MongoDBService.init();
             return {
-                // ProductDao: new ProductsMongo(),
+                ProductDao: new ProductsMongo(),
                 CartDao: new CartsMongo(),
                 // MessageDao: new MessagesMongo() **NO CREADO**
                 UserDao: new UsersMongo()
             }
         }
-        // case 'filesystem': {
-        //     return {
-        //         ProductDao: new ProductFileSystem(),
-        //         CartDao: new CartFileSystem(),
-        //         // MessageDao: new MessagesFileSystem(),
-        //         UserDao: new UsersMongo(),
-        //     }
-        // }
+            // case 'filesystem': {
+            //     return {
+            //         ProductDao: new ProductFileSystem(),
+            //         CartDao: new CartFileSystem(),
+            //         // MessageDao: new MessagesFileSystem(),
+            //         UserDao: new UsersMongo(),
+            //     }
+            // }
             // case 'database': {
             return {
                 // ProductDao: new ProductBataBase(),
@@ -37,6 +37,9 @@ const getSelectedDaos = () => {
     }
 }
 
-const { ProductDao, CartDao, UserDao } = getSelectedDaos();
+// const { ProductDao, CartDao, UserDao } = getSelectedDaos();
 
-export { ProductDao, CartDao, UserDao }
+// export { ProductDao, CartDao, UserDao }
+const { CartDao, UserDao } = getSelectedDaos();
+
+export { CartDao, UserDao }
