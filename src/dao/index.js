@@ -26,14 +26,14 @@ const getSelectedDaos = () => {
                 UserDao: new UsersMongo(),
             }
         }
-        case 'database': {
+            // case 'database': {
             return {
-                ProductDao: new ProductBataBase(),
-                CartDao: new CartDatabase(),
+                // ProductDao: new ProductBataBase(),
+                // CartDao: new CartDatabase(),
                 // MessageDao: new MessagesDataBase(),
-                UserDao: new UsersMongo(),
+                // UserDao: new UsersMongo(),
+                // }
             }
-        }
     }
 }
 
