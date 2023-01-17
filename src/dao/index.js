@@ -18,22 +18,22 @@ const getSelectedDaos = () => {
                 UserDao: new UsersMongo()
             }
         }
-            case 'filesystem': {
-                return {
-                    ProductDao: new ProductFileSystem(),
-                    CartDao: new CartFileSystem(),
-                    // MessageDao: new MessagesFileSystem(),
-                    UserDao: new UsersMongo(),
-                }
-            }
-            case 'database': {
-            return {
-                ProductDao: new ProductBataBase(),
-                CartDao: new CartDatabase(),
-                MessageDao: new MessagesDataBase(),
-                UserDao: new UsersMongo(),
-                }
-            }
+            // case 'filesystem': {
+            //     return {
+            //         ProductDao: new ProductFileSystem(),
+            //         CartDao: new CartFileSystem(),
+            //         // MessageDao: new MessagesFileSystem(),
+            //         UserDao: new UsersMongo(),
+            //     }
+            // }
+            // case 'database': {
+            // return {
+            //     ProductDao: new ProductBataBase(),
+            //     CartDao: new CartDatabase(),
+            //     MessageDao: new MessagesDataBase(),
+            //     UserDao: new UsersMongo(),
+            //     }
+            // }
     }
 }
 
