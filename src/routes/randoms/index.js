@@ -7,7 +7,7 @@ const router = Router()
 
 router.get('/', (req, res) => {
     const cant = req.query.cant || 100000
-    const subProcess = fork('randomNumbers.js')
+    const subProcess = fork('./src/utils/randomNumbers.js')
 
     subProcess.send(cant)
 

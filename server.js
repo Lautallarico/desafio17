@@ -1,19 +1,19 @@
 
 import express from 'express'
 import handlebars from 'express-handlebars'
-import { ProductRouter, CartRouter, AuthRouter, InfoRouter, RandomRouter } from './routes/index.js'
+import { ProductRouter, CartRouter, AuthRouter, InfoRouter, RandomRouter } from './src/routes/index.js'
 import cors from 'cors'
 
-import { PassportAuth } from './middlewares/index.js'
+import { PassportAuth } from './src/middlewares/index.js'
 import session from 'express-session'
 
-import { config } from './config/index.js'
+import { config } from './src/config/index.js'
 import passport from 'passport'
 
 import cluster from 'cluster'
-import { INFO } from './utils/index.js'
+import { INFO } from './src/utils/index.js'
 
-import logger from './loggers/loggers.js'
+import logger from './src/loggers/loggers.js'
 
 const app = express()
 
